@@ -28,7 +28,7 @@ def conect():
         conexao.close()
 
 
-#Gerenciador de contexto "with" para fechar conexão e a conexão com cursor automaticamente.
+#Gerenciador de contexto para fechar conexão com BD e a conexão com cursor automaticamente.
 #Todos os comandos SQL usará os dois primeiros comandos com o with.
 with conect() as conexao:
     with conexao.cursor() as cursor:
